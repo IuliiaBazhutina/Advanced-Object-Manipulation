@@ -64,5 +64,11 @@ console.log("Courses (with new Web design): ", student.courses);
 
 console.log("Number of courses: ", student.numberOfCourses());
 
+// Bonus
+console.log("\nBonus");
 
+console.log("Array of scores: ", scores);
+let totalScore = scores.reduce((accumulator, currentScore) => accumulator + currentScore);
+let averageScore = totalScore / scores.length;
+console.log("Average score: ", averageScore);
 
