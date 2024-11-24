@@ -5,13 +5,19 @@ let student = {
     name: "Jack",
     age: 25,
     enrolled: true,
-    courses: ['javascript', 'java', 'dataBase'],
+    courses: ['javascript', 'java', 'database'],
     info: function () {
         console.log(`Name: ${this.name}\nAge: ${this.age}\nEnrolled: ${this.enrolled}\nCourses: ${this.courses}`)
+    },
+
+    // Task5
+    addCourse: function (course) {
+        this.courses.push(course);
     }
 }
 
 console.log(student.name);
+
 console.log(student.age);
 student.info();
 
@@ -26,7 +32,7 @@ console.log('Student object from JSON string: ', student1);
 
 // Part 3: Using Destructuring Assignment
 console.log("\nPart 3: Using Destructuring Assignment");
-let {name, age, enrolled,courses} = student;
+let { name, age, enrolled, courses } = student;
 console.log(`Name: ${name}, Courses: ${courses}`);
 
 let scores = [85, 92, 78, 90];
@@ -36,18 +42,21 @@ console.log(`Score 1: ${score1}\nScore 2: ${score2}`);
 // Part 4: The Spread Operator
 console.log("\nPart 4: The Spread Operator");
 
-let clonedStudent = {...student};
+let clonedStudent = { ...student };
 console.log("Cloned object: ", clonedStudent);
 
-clonedStudent = {...clonedStudent, graduationYear: 2020 };
+clonedStudent = { ...clonedStudent, graduationYear: 2020 };
 console.log("Cloned object with a new property: ", clonedStudent);
 
 let newCourses = ["English", "Math"];
-let combinedCourses = [...student.courses, ... newCourses];
+let combinedCourses = [...student.courses, ...newCourses];
 console.log("Combined courses: ", combinedCourses);
 
+//Part 5: Object Methods
+console.log("\nPart 5: Object Methods");
 
-// Clone the student object using the spread operator.
-// Add a new property (e.g., graduationYear) to the cloned object and log it.
-// Merge two arrays:
-// Use the spread operator to combine student.courses with a new array of courses.
+student.addCourse("Web design");
+console.log("Courses (with new Web design): ", student.courses);
+
+
+
