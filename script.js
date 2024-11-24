@@ -21,5 +21,8 @@ console.log("\nPart 2: Working with JSON");
 let studentJSON = JSON.stringify(student);
 console.log(`Student JSON string: ${studentJSON}`);
 
+let student1 = JSON.parse(studentJSON);
+// console.log(`Student object converted from JSON string: ${student1}`);
+console.log('Student object from JSON string: ', student1);
 
 
