@@ -38,3 +38,16 @@ console.log("\nPart 4: The Spread Operator");
 
 let clonedStudent = {...student};
 console.log("Cloned object: ", clonedStudent);
+
+clonedStudent = {...clonedStudent, graduationYear: 2020 };
+console.log("Cloned object with a new property: ", clonedStudent);
+
+let newCourses = ["English", "Math"];
+let combinedCourses = [...student.courses, ... newCourses];
+console.log("Combined courses: ", combinedCourses);
+
+
+// Clone the student object using the spread operator.
+// Add a new property (e.g., graduationYear) to the cloned object and log it.
+// Merge two arrays:
+// Use the spread operator to combine student.courses with a new array of courses.
