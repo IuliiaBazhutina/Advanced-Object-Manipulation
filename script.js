@@ -13,6 +13,10 @@ let student = {
     // Task5
     addCourse: function (course) {
         this.courses.push(course);
+    },
+
+    numberOfCourses: function () {
+        return this.courses.length;
     }
 }
 
@@ -57,6 +61,8 @@ console.log("\nPart 5: Object Methods");
 
 student.addCourse("Web design");
 console.log("Courses (with new Web design): ", student.courses);
+
+console.log("Number of courses: ", student.numberOfCourses());
 
 
 
