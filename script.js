@@ -32,3 +32,9 @@ console.log(`Name: ${name}, Courses: ${courses}`);
 let scores = [85, 92, 78, 90];
 let [score1, score2] = scores;
 console.log(`Score 1: ${score1}\nScore 2: ${score2}`);
+
+// Part 4: The Spread Operator
+console.log("\nPart 4: The Spread Operator");
+
+let clonedStudent = {...student};
+console.log("Cloned object: ", clonedStudent);
