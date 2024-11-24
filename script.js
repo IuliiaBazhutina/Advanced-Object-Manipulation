@@ -22,7 +22,10 @@ let studentJSON = JSON.stringify(student);
 console.log(`Student JSON string: ${studentJSON}`);
 
 let student1 = JSON.parse(studentJSON);
-// console.log(`Student object converted from JSON string: ${student1}`);
 console.log('Student object from JSON string: ', student1);
 
+// Part 3: Using Destructuring Assignment
+console.log("\nPart 3: Using Destructuring Assignment");
+let {name, age, enrolled,courses} = student;
+console.log(`Name: ${name}, Courses: ${courses}`);
 
