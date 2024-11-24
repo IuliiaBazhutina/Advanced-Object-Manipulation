@@ -29,3 +29,6 @@ console.log("\nPart 3: Using Destructuring Assignment");
 let {name, age, enrolled,courses} = student;
 console.log(`Name: ${name}, Courses: ${courses}`);
 
+let scores = [85, 92, 78, 90];
+let [score1, score2] = scores;
+console.log(`Score 1: ${score1}\nScore 2: ${score2}`);
