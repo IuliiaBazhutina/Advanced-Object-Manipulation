@@ -15,5 +15,11 @@ console.log(student.name);
 console.log(student.age);
 student.info();
 
+// Part 2: Working with JSON
+console.log("\nPart 2: Working with JSON");
+
+let studentJSON = JSON.stringify(student);
+console.log(`Student JSON string: ${studentJSON}`);
+
 
 
